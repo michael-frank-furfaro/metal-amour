@@ -4,6 +4,7 @@
 import "./style.css";
 import Phaser from "phaser";
 import { PrologueScene } from "./ui/PrologueScene.ts";
+import { LevelScene }    from "./ui/LevelScene.ts";
 
 export const GAME_WIDTH  = 1280;
 export const GAME_HEIGHT = 720;
@@ -17,7 +18,7 @@ const config: Phaser.Types.Core.GameConfig = {
   pixelArt: true,
   scene: [
     PrologueScene,
-    // LevelScene,
+    LevelScene,
     // WorkshopScene,
     // EndgameScene,
   ],

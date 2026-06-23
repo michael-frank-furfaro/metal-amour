@@ -511,11 +511,7 @@ export class PrologueScene extends Phaser.Scene {
 
     this.cameras.main.fadeOut(1500, 0, 0, 0);
     this.cameras.main.once("camerafadeoutcomplete", () => {
-      // TODO: replace with this.scene.start("LevelScene") once built
-      this.speakerLabel.setText("< SYSTEM >").setColor("#003366");
-      this.mainText.setText("LEVEL 1\nLATEST CONNECTION\n\nCOMING SOON");
-      this.promptText.setText("");
-      this.cameras.main.fadeIn(1200);
+      this.scene.start("LevelScene");
     });
   }
 }

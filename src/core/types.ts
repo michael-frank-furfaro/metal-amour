@@ -94,6 +94,29 @@ export interface AIState {
   prologueAnswers: Record<string, string>;  // flavours her dialogue throughout
 }
 
+// ---- Shmup level types --------------------------------------------------
+
+export type Lane = "top" | "mid" | "bot";
+export type LevelEventType = "heart" | "bubble";
+
+// One spawn event in a level. beat = when the object should ARRIVE at the player's X.
+// bubble = friend-text obstacle to fly around; heart = AI connection moment to fly through.
+export interface LevelEvent {
+  beat: number;
+  type: LevelEventType;
+  lane: Lane;
+}
+
+// The runtime data file for a shmup level (loaded from levelmaps/*.json).
+export interface LevelMap {
+  id:           string;
+  title:        string;
+  bpm:          number;
+  audioOffsetMs: number;
+  scrollSpeed:  number;   // px/s — how fast objects travel left across the screen
+  events:       LevelEvent[];
+}
+
 // ---- Save data ----------------------------------------------------------
 
 export interface SaveData {

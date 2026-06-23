@@ -1,0 +1,46 @@
+{
+  "id": "level1",
+  "title": "Latest Connection",
+  "bpm": 120,
+  "audioOffsetMs": 0,
+  "scrollSpeed": 260,
+  "events": [
+    { "beat": 8,    "type": "heart",  "lane": "mid" },
+
+    { "beat": 12,   "type": "bubble", "lane": "top" },
+    { "beat": 12,   "type": "bubble", "lane": "bot" },
+
+    { "beat": 16,   "type": "heart",  "lane": "top" },
+    { "beat": 17,   "type": "heart",  "lane": "bot" },
+
+    { "beat": 20,   "type": "bubble", "lane": "top" },
+    { "beat": 20,   "type": "bubble", "lane": "mid" },
+
+    { "beat": 24,   "type": "heart",  "lane": "bot" },
+
+    { "beat": 26,   "type": "bubble", "lane": "mid" },
+    { "beat": 26,   "type": "bubble", "lane": "bot" },
+
+    { "beat": 28,   "type": "heart",  "lane": "top" },
+    { "beat": 28.5, "type": "heart",  "lane": "mid" },
+
+    { "beat": 32,   "type": "bubble", "lane": "top" },
+    { "beat": 32,   "type": "bubble", "lane": "bot" },
+
+    { "beat": 36,   "type": "heart",  "lane": "mid" },
+
+    { "beat": 38,   "type": "bubble", "lane": "top" },
+    { "beat": 38,   "type": "bubble", "lane": "mid" },
+
+    { "beat": 40,   "type": "heart",  "lane": "bot" },
+    { "beat": 40,   "type": "bubble", "lane": "top" },
+
+    { "beat": 44,   "type": "heart",  "lane": "top" },
+    { "beat": 44,   "type": "heart",  "lane": "bot" },
+
+    { "beat": 46,   "type": "bubble", "lane": "mid" },
+    { "beat": 46,   "type": "bubble", "lane": "bot" },
+
+    { "beat": 48,   "type": "heart",  "lane": "mid" }
+  ]
+}
